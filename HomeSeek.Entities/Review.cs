@@ -25,7 +25,7 @@ namespace HomeSeek.Entities
         public DateTime SubDate { get; set; }
         [Range(0, 10, ErrorMessage = "Values should be between 0 - 10.")]
         public double OverallRating { get; set; }
-        [DataType(DataType.Text),MaxLength(400,ErrorMessage ="Max characters 400. Enter shoter text.")]
+        [DataType(DataType.Text),CustomValidation(typeof(Validations),"MaxWords")]
         public string Comment { get; set; }
        // public int? ReservationId { get; set; }
         public virtual ApplicationUser ApplicationUser { get; set; }
