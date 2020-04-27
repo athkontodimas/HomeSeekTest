@@ -38,7 +38,7 @@
             Reservation r1 = new Reservation() { CheckInDate = new DateTime(2020, 6, 1), CheckOutDate = new DateTime(2020, 6, 5), DaysOfStaying = 4, TotalPrice = 800};
             Reservation r2 = new Reservation() { CheckInDate = new DateTime(2020, 7, 11), CheckOutDate = new DateTime(2020, 7, 22), DaysOfStaying = 11, TotalPrice = 5500};
             Reservation r3 = new Reservation() { CheckInDate = new DateTime(2020, 8, 21), CheckOutDate = new DateTime(2020, 8, 30), DaysOfStaying = 9, TotalPrice = 9000};
-            Reservation test = new Reservation() { CheckInDate = new DateTime(2020, 1, 3), CheckOutDate = new DateTime(2020, 1, 10), DaysOfStaying = -1, TotalPrice = 9000 };
+            Reservation test = new Reservation() { CheckInDate = new DateTime(2020, 1, 3), CheckOutDate = new DateTime(2020, 1, 10), DaysOfStaying = 8, TotalPrice = 500 };
 
             //================= Seeding Reviews =================
             //Review template = new Review() { Title = "", Duration = 0, PhotoUrl = "", Price = 0, ProductionYear = new DateTime(1, 1, 1), Rating = 0D, TrailerUrl = "", Watched = false ,Country=Country.United_States_of_America};

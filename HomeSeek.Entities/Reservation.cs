@@ -21,7 +21,7 @@ namespace HomeSeek.Entities
         [CustomValidation(typeof(Validations), "GreaterThanZero")/*,RegularExpression(@"([0-9])+")*/]
         public int DaysOfStaying { get; set; }
         
-        [DataType( DataType.Currency, ErrorMessage ="Price should contain only numbers." ), CustomValidation(typeof(Validations), "GreaterThanZero")/*, RegularExpression(@"([0-9])+")*/] //, Range(5,100000,ErrorMessage ="Price should be between $ 5 - 5000.")]
+        [DataType( DataType.Currency, ErrorMessage ="Price should contain only numbers." ), CustomValidation(typeof(Validations), "GreaterThanZero")]
         public decimal TotalPrice { get; set; }
         
         
